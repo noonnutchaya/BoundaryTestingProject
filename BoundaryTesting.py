@@ -4,7 +4,7 @@ x_min = ''
 x_max = ''
 y_min = ''
 y_max = ''
-type = ''
+type_ = ''
 
 while x_min is not int:
     try:
@@ -75,31 +75,31 @@ elif (y_check > 100 and y_check <= 1000):
     y_diff = 10
 
 while True: 
-    while type is not int:
+    while type_ is not int:
         try:
-            type = int(input("Please select type of test case: "))
+            type_ = int(input("Please select type of test case: "))
             break
         except ValueError:
             print('Please select correct type')
-    if type == 1 :
+    if type_ == 1 :
         y_mid = (y_max+y_min)/2
         x_mid = (x_min+x_max)/2
         list_x = [ x_min, x_min+x_diff, x_mid, x_mid, x_mid , x_mid , x_mid , x_max-x_diff, x_max]
         list_y = [ y_mid, y_mid, y_mid, y_max-y_diff, y_max,y_min+y_diff, y_min , y_mid, y_mid]
         break
-    if type == 2 :
+    if type_ == 2 :
         y_mid = (y_max+y_min)/2
         x_mid = (x_min+x_max)/2
         list_x = [ x_min, x_min+x_diff, x_mid, x_mid    , x_mid     , x_mid   , x_mid , x_max-x_diff, x_max   , x_min-x_diff , x_mid ,x_mid , x_max+x_diff]
         list_y = [ y_mid, y_mid    , y_mid, y_max-y_diff, y_max ,y_min+y_diff, y_min , y_mid    , y_mid    ,y_mid, y_max+y_diff , y_min-y_diff, y_mid]
         break
-    if type == 3 :
+    if type_ == 3 :
         y_mid = (y_max+y_min)/2
         x_mid = (x_min+x_max)/2
         list_x = [ x_min, x_min+x_diff, x_mid, x_mid, x_mid , x_mid , x_mid , x_max-x_diff, x_max, x_min, x_min, x_min,x_min, x_min+x_diff, x_min+x_diff, x_min+x_diff, x_min+x_diff, x_max-x_diff, x_max-x_diff, x_max-x_diff, x_max-x_diff,x_max, x_max,x_max,x_max]
         list_y = [ y_mid, y_mid, y_mid, y_max-y_diff, y_max,y_min+y_diff, y_min , y_mid, y_mid, y_max,y_max-y_diff, y_min+y_diff,y_min,y_max, y_max-y_diff, y_min+y_diff,y_min,y_max, y_max-y_diff, y_min+y_diff, y_min,y_max,y_max-y_diff,y_min+y_diff,y_min]
         break
-    if type == 4 :
+    if type_ == 4 :
         y_mid = (y_max+y_min)/2
         x_mid = (x_min+x_max)/2
         list_x = [ x_min, x_min+x_diff, x_mid, x_mid, x_mid , x_mid , x_mid , x_max-x_diff, x_max, x_min, x_min, x_min,x_min, x_min+x_diff, x_min+x_diff, x_min+x_diff, x_min+x_diff, x_max-x_diff, x_max-x_diff, x_max-x_diff, x_max-x_diff,x_max, x_max,x_max,x_max, x_min-x_diff, x_min-x_diff, x_min-x_diff, x_min-x_diff, x_min-x_diff, x_min-x_diff, x_min-x_diff, x_min, x_min, x_min+x_diff, x_min+x_diff, x_mid ,x_mid ,x_max-x_diff, x_max-x_diff, x_max ,x_max, x_max+x_diff , x_max+x_diff, x_max+x_diff, x_max+x_diff, x_max+x_diff, x_max+x_diff, x_max+x_diff]
