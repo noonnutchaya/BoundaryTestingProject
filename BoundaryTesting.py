@@ -1,19 +1,55 @@
 import matplotlib.pyplot as plt
-x_min = float(input("Enter x min: ")) 
+
+x_min = ''
+x_max = ''
+y_min = ''
+y_max = ''
+
+while x_min is not int:
+    try:
+        x_min = float(input('Enter x min: '))
+        break
+    except ValueError:
+        print('Please enter a valid number: ')
+
 while True:
-        x_max = float(input("Enter x max: "))
-        if x_max <= x_min:
-            print('Please input correct value')
-        elif x_max > x_min:
+    while x_max is not int:
+        try:
+            x_max = float(input('Enter x max: '))
             break
+        except ValueError:
+            print('Please enter a valid number: ')
+
+    if x_max <= x_min:
+        print('Please input correct value')
+    elif x_max > x_min:
+        break
 print('----------------------')
-y_min = float(input("Enter y min: ")) 
+
+# ---------------------------------------------------
+
+while y_min is not int:
+    try:
+        y_min = float(input('Enter y min: '))
+        break
+    except ValueError:
+        print('Please enter a valid number: ')
+
 while True:
-        y_max = float(input("Enter y max: ")) 
-        if y_max <= y_min:
-             print('Please input correct value')
-        elif y_max > y_min:
+    while y_max is not int:
+        try:
+            y_max = float(input('Enter y max: '))
             break
+        except ValueError:
+            print('Please enter a valid number: ')
+
+    if y_max <= y_min:
+        print('Please input correct value')
+    elif y_max > y_min:
+        break
+
+# ---------------------------------------------------
+
 print('----------------------')
 print('[1] BVA')
 print('[2] Worst Case')
@@ -21,12 +57,15 @@ print('[3] Robustness')
 print('[4] Worst Case Robustness')
 x_check = x_max - x_min
 y_check = y_max - y_min
+x_diff = 50
+y_diff = 50
 if (x_check <= 10) :
     x_diff = 0.1
 elif (x_check > 10 and x_check <= 100 ):
     x_diff = 1
 elif (x_check > 100 and x_check <= 1000):
     x_diff = 10
+#-------------------------------------------------    
 if (y_check <= 10) :
     y_diff = 0.1
 elif (y_check > 10 and y_check <= 100 ):
