@@ -90,15 +90,16 @@ while True:
     if type_ == 2 :
         y_mid = (y_max+y_min)/2
         x_mid = (x_min+x_max)/2
-        list_x = [ x_min, x_min+x_diff, x_mid, x_mid    , x_mid     , x_mid   , x_mid , x_max-x_diff, x_max   , x_min-x_diff , x_mid ,x_mid , x_max+x_diff]
-        list_y = [ y_mid, y_mid    , y_mid, y_max-y_diff, y_max ,y_min+y_diff, y_min , y_mid    , y_mid    ,y_mid, y_max+y_diff , y_min-y_diff, y_mid]
+        list_x = [ x_min, x_min+x_diff, x_mid, x_mid, x_mid , x_mid , x_mid , x_max-x_diff, x_max, x_min, x_min, x_min,x_min, x_min+x_diff, x_min+x_diff, x_min+x_diff, x_min+x_diff, x_max-x_diff, x_max-x_diff, x_max-x_diff, x_max-x_diff,x_max, x_max,x_max,x_max]
+        list_y = [ y_mid, y_mid, y_mid, y_max-y_diff, y_max,y_min+y_diff, y_min , y_mid, y_mid, y_max,y_max-y_diff, y_min+y_diff,y_min,y_max, y_max-y_diff, y_min+y_diff,y_min,y_max, y_max-y_diff, y_min+y_diff, y_min,y_max,y_max-y_diff,y_min+y_diff,y_min]
         break
     if type_ == 3 :
         y_mid = (y_max+y_min)/2
         x_mid = (x_min+x_max)/2
-        list_x = [ x_min, x_min+x_diff, x_mid, x_mid, x_mid , x_mid , x_mid , x_max-x_diff, x_max, x_min, x_min, x_min,x_min, x_min+x_diff, x_min+x_diff, x_min+x_diff, x_min+x_diff, x_max-x_diff, x_max-x_diff, x_max-x_diff, x_max-x_diff,x_max, x_max,x_max,x_max]
-        list_y = [ y_mid, y_mid, y_mid, y_max-y_diff, y_max,y_min+y_diff, y_min , y_mid, y_mid, y_max,y_max-y_diff, y_min+y_diff,y_min,y_max, y_max-y_diff, y_min+y_diff,y_min,y_max, y_max-y_diff, y_min+y_diff, y_min,y_max,y_max-y_diff,y_min+y_diff,y_min]
+        list_x = [ x_min, x_min+x_diff, x_mid, x_mid    , x_mid     , x_mid   , x_mid , x_max-x_diff, x_max   , x_min-x_diff , x_mid ,x_mid , x_max+x_diff]
+        list_y = [ y_mid, y_mid    , y_mid, y_max-y_diff, y_max ,y_min+y_diff, y_min , y_mid    , y_mid    ,y_mid, y_max+y_diff , y_min-y_diff, y_mid]
         break
+    
     if type_ == 4 :
         y_mid = (y_max+y_min)/2
         x_mid = (x_min+x_max)/2
