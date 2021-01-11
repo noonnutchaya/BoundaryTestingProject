@@ -50,7 +50,6 @@ while True:
         break
 
 # ---------------------------------------------------
-
 print('----------------------')
 print('[1] BVA')
 print('[2] Worst Case')
@@ -58,21 +57,8 @@ print('[3] Robustness')
 print('[4] Worst Case Robustness')
 x_check = x_max - x_min
 y_check = y_max - y_min
-x_diff = 50
-y_diff = 50
-if (x_check <= 10) :
-    x_diff = 0.1
-elif (x_check > 10 and x_check <= 100 ):
-    x_diff = 1
-elif (x_check > 100 and x_check <= 1000):
-    x_diff = 10
-#-------------------------------------------------    
-if (y_check <= 10) :
-    y_diff = 0.1
-elif (y_check > 10 and y_check <= 100 ):
-    y_diff = 1
-elif (y_check > 100 and y_check <= 1000):
-    y_diff = 10
+x_diff =  ((x_max - x_min)/100*10)
+y_diff = ((y_max - y_min)/100*10)
 
 while True: 
     while type_ is not int:
@@ -108,7 +94,6 @@ while True:
         break
     else: 
         print('Please select correct type')
-
 plt.scatter(list_x,list_y)
 plt.ylabel('Y value')
 plt.xlabel('X value')
