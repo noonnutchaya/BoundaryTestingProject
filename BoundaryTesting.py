@@ -20,7 +20,7 @@ while True:
     if x_min < 0:
         print('Please enter a positive number ')
     elif x_min >= 5000:
-        print("x min should less than maximun number (Maximun number: 5000)")
+        print("x min should less than maximun number (Maximum number: 5000)")
     else:
         break
 
@@ -35,7 +35,7 @@ while True:
     if x_max <= x_min and x_max >= 0:
         print('Please input correct value')
     elif x_max > 5000 :
-        print("Please input correct value (Maximun number: 5000)")
+        print("Please input correct value (Maximum number: 5000)")
     elif x_max < 0:
         print('Please enter a positive number')
     elif x_max > x_min:
