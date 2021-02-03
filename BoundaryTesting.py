@@ -19,8 +19,12 @@ while True:
     
     if x_min < 0:
         print('Please enter a positive number ')
+    #  Unreachable path 
+    elif x_min <= -1 :
+        print('Please enter a positive number')
     elif x_min >= 5000:
         print("x min should less than maximum number (Maximum number: 5000)")
+    
     else:
         break
 
