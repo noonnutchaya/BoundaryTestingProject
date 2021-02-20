@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-x_min = ''
+x_min = 0
 x_max = ''
 y_min = ''
 y_max = ''
@@ -23,8 +23,7 @@ while True:
     elif x_min <= -1 :
         print('Please enter a positive number')
     elif x_min >= 5000:
-        print("x min should less than maximum number (Maximum number: 5000)")
-    
+        print("x min should less than maximum number (Maximum number: 5000)") 
     else:
         break
 
@@ -116,7 +115,7 @@ while True:
         list_y = [ y_mid, y_mid    , y_mid, y_max-y_diff, y_max ,y_min+y_diff, y_min , y_mid    , y_mid    ,y_mid, y_max+y_diff , y_min-y_diff, y_mid]
         plt.suptitle('Robustness')
         break
-    
+   
     if type_ == 4 :
         y_mid = (y_max+y_min)/2
         x_mid = (x_min+x_max)/2
