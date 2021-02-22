@@ -16,14 +16,14 @@ with open("qsort") as file_in:
     lines = []
     for line in file_in:
         temps = line.replace("\t","").replace(' ',"")
-        if (temps[0].isdigit()):
+        if (temps[0].isdigit() and temps[1].isdigit() == False):
             temp = int(temps[0])
             lines.append(temp)
             # print(temps[0])
-            if (temps[0].isdigit() and temps[1].isdigit()):
-                temp = int(temps[0]+temps[1])
-                lines.append(temp)
-                # print(temp)
+        elif (temps[0].isdigit() and temps[1].isdigit()):
+            temp = int(temps[0]+temps[1])
+            lines.append(temp)
+            # print(temp)
     lines = list(dict.fromkeys(lines))
     node = len(lines)
     print("Node: ",node)
@@ -31,5 +31,3 @@ print("V(G) = E - N + 2")
 print("V(G) = "+ str(edges) + " - "+ str(node) +" + 2")
 vg = int(edges)-node + 2
 print("V(G) =", str(vg))
-
-  
